@@ -628,6 +628,7 @@
         "owner": "Właściciel",
         "plate": "Rejestracja",
         "vehicle": "Model",
+        "garage": "Garaż",
         "spawned": "Wyciągnięty",
         "state": "Lokalizacja",
         "engine": "Silnik",

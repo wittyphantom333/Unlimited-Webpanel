@@ -628,6 +628,7 @@
         "owner": "Ejer",
         "plate": "Nummerplade",
         "vehicle": "Model",
+        "garage": "Garage",
         "spawned": "Spawned",
         "state": "Status",
         "engine": "Motor",

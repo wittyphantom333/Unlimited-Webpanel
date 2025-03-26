@@ -72,6 +72,9 @@
                 <q-td key="vehicle" :props="props">
                   {{ props.row.vehicle }}
                 </q-td>
+                <q-td key="garage" :props="props">
+                  {{ props.row.garage }}
+                </q-td>
                 <q-td key="spawned" :props="props" style="width: 50px">
                   <q-chip
                     size="sm"
@@ -150,6 +153,14 @@ export default {
           label: this.$i18n.t('components.vehicleList.headers.vehicle'),
           field: row => row.vehicle,
           format: val => `${val}`,
+        },
+        {
+          name: 'garage',
+          align: 'left',
+          label: this.$i18n.t('components.vehicleList.headers.garage'),
+          field: row => row.garage,
+          format: val => `${val}`,
+          sortable: true,
         },
         {
           name: 'spawned',

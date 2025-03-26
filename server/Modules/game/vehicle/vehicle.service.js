@@ -12,8 +12,8 @@ export const getOwnedVehiclesPartial = async (
   const DESC = desc ? 'DESC' : 'ASC'
   const garageColumnName = unlEnv.config.vehGarageColumn
   const stateColumnName = unlEnv.config.vehStateColumn
-  
-  const query = `SELECT id, plate, vehicle, engine, body, fuel, citizenid, ${stateColumnName} as state FROM player_vehicles WHERE license LIKE ? or citizenid LIKE ? or plate LIKE ? or ${garageColumnName} LIKE ? or vehicle LIKE ? ORDER BY ${orderBy} ${DESC} LIMIT ?, ?`
+
+  const query = `SELECT id, plate, vehicle, garage, engine, body, fuel, citizenid, ${stateColumnName} as state FROM player_vehicles WHERE license LIKE ? or citizenid LIKE ? or plate LIKE ? or ${garageColumnName} LIKE ? or vehicle LIKE ? ORDER BY ${orderBy} ${DESC} LIMIT ?, ?`
 
   return await MySQL.query(query, [
     `%${filter}%`,
@@ -37,7 +37,7 @@ export const getPlayerOwnedVehiclesPartial = async (
   const garageColumnName = unlEnv.config.vehGarageColumn
   const stateColumnName = unlEnv.config.vehStateColumn
 
-  const query = `SELECT id, plate, vehicle, engine, body, fuel, citizenid, ${stateColumnName} as state FROM player_vehicles WHERE citizenid = ? AND (plate LIKE ? or ${garageColumnName} LIKE ?) ORDER BY ${orderBy} ${DESC} LIMIT ?, ?`
+  const query = `SELECT id, plate, vehicle, garage, engine, body, fuel, citizenid, ${stateColumnName} as state FROM player_vehicles WHERE citizenid = ? AND (plate LIKE ? or ${garageColumnName} LIKE ?) ORDER BY ${orderBy} ${DESC} LIMIT ?, ?`
 
   return await MySQL.query(query, [
     citizenid,

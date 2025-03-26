@@ -628,6 +628,7 @@
         "owner": "Dueño",
         "plate": "Placa",
         "vehicle": "Modelo",
+        "garage": "Cochera",
         "spawned": "Generada",
         "state": "Estado",
         "engine": "Motor",

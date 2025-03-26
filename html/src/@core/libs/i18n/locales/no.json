@@ -628,6 +628,7 @@
         "owner": "Eier",
         "plate": "Plate",
         "vehicle": "Modell",
+        "garage": "Garasje",
         "spawned": "Spawned",
         "state": "Status",
         "engine": "Motor",

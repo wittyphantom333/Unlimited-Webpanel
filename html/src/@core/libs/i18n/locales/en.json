@@ -628,6 +628,7 @@
         "owner": "Owner",
         "plate": "Plate",
         "vehicle": "Model",
+        "garage": "Garage",
         "spawned": "Spawned",
         "state": "State",
         "engine": "Engine",
@@ -713,8 +714,11 @@
       },
       "buttons": {
         "undo": "Undo",
-        "defaults": "Defaults"
-      }
+        "defaults": "Defaults",
+        "fixSupStashItems": "Fix Stash Headers"
+      },
+      "fixSupStashItemsHeader": "Fix Stash Item Header",
+      "fixSupStashItemsSub": "Attempt to fix the headers on the stash tables"
     },
     "inventory": {
       "playerInventory": "Player",

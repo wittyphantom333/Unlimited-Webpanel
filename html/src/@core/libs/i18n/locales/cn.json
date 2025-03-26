@@ -618,6 +618,7 @@
       "owner": "所有者",
       "plate": "车牌",
       "vehicle": "车型",
+      "garage": "车库",
       "spawned": "已生成",
       "state": "状态",
       "engine": "引擎",

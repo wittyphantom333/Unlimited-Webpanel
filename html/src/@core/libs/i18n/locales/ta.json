@@ -628,6 +628,7 @@
         "owner": "Owner",
         "plate": "Plate",
         "vehicle": "Model",
+        "garage": "Garage",
         "spawned": "Spawned",
         "state": "State",
         "engine": "Engine",

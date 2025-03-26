@@ -628,6 +628,7 @@
         "owner": "Besitzer",
         "plate": "Kennzeichen",
         "vehicle": "Model",
+        "garage": "Garage",
         "spawned": "Spawned",
         "state": "Status",
         "engine": "Motor",

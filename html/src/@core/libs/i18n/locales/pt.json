@@ -628,6 +628,7 @@
         "owner": "Dono",
         "plate": "Placa",
         "vehicle": "Modelo",
+        "garage": "Garagem",
         "spawned": "Spawned",
         "state": "Estado",
         "engine": "Motor",
