@@ -46,7 +46,7 @@ stashesRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -66,7 +66,7 @@ stashesRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -93,7 +93,7 @@ stashesRouter.post(
         storageSlots: storageSettings.maxSlots,
       }
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -148,7 +148,7 @@ stashesRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -188,7 +188,7 @@ stashesRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -224,7 +224,7 @@ stashesRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -261,7 +261,7 @@ stashesRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -293,7 +293,7 @@ stashesRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }

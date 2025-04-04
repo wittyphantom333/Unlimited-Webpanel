@@ -21,7 +21,7 @@ jobRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -44,7 +44,7 @@ jobRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -74,7 +74,7 @@ jobRouter.patch(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -103,7 +103,7 @@ jobRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -132,7 +132,7 @@ jobRouter.delete(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }

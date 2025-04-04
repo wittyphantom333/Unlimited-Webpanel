@@ -1,5 +1,9 @@
 {
   "port": "3000",
+  "unlServerName": "Unlimited",
+  "unlApplicationName": "Admin Panel",
+  "unlHostName": "localhost",
+  "unlServerNameURL": "http://8.8.8.8:40330",
   "unlDisableServe": "false",
   "unlMySQLSessions": "false",
 
@@ -50,7 +54,12 @@
   "additionalMoneyTypes": {},
 
   "usedInventory": "qb-inventory",
+  "inventoryImageFolder": "/html/images",
+  "inventoryForImage": "qb-inventory",
   "maxPlayerSlots": "41",
+
+  "housingTable": "jpr_housingsystem_houses",
+  "housingTableProperties": "jpr_housingsystem_houses_realestate",
 
   "disableWeaponLogs": "false",
   "excludeWeaponLogsFromDiscord": "false",

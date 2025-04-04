@@ -16,6 +16,7 @@ import devVehicleRouter from '../Modules/dev/vehicle/vehicle.route'
 import waypointRouter from '../Modules/game/waypoint/waypoint.route'
 import accountRouter from '../Modules/game/accounts/accounts.route'
 import stashesRouter from '../Modules/game/stashes/stashes.route'
+import housesRouter from "../Modules/game/houses/houses.route";
 
 const router = new Router({ prefix: '/api' })
 
@@ -30,6 +31,7 @@ router.use(configRouter.routes(), configRouter.allowedMethods())
 router.use(accountRouter.routes(), accountRouter.allowedMethods())
 router.use(playerRouter.routes(), playerRouter.allowedMethods())
 router.use(vehicleRouter.routes(), vehicleRouter.allowedMethods())
+router.use(housesRouter.routes(), housesRouter.allowedMethods())
 router.use(logRouter.routes(), logRouter.allowedMethods())
 router.use(waypointRouter.routes(), waypointRouter.allowedMethods())
 router.use(stashesRouter.routes(), stashesRouter.allowedMethods())

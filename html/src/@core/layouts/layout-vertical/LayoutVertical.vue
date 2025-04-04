@@ -54,7 +54,7 @@
           <img :src="logoUrl" />
         </q-avatar>
 
-        <h2 class="q-pl-lg brand-text">Unlimited</h2>
+        <h2 class="q-pl-lg brand-text">Admin Panel</h2>
       </div>
 
       <q-list>

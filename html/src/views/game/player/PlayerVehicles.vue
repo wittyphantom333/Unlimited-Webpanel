@@ -158,6 +158,7 @@ export default {
           label: this.$i18n.t('components.vehicleList.headers.vehicle'),
           field: row => row.vehicle,
           format: val => `${val}`,
+          sortable: true,
         },
         {
           name: 'garage',
@@ -205,7 +206,7 @@ export default {
       ],
       vehicles: [],
       pagination: {
-        sortBy: 'plate',
+        sortBy: 'vehicle',
         descending: false,
         page: 1,
         rowsPerPage: 25,

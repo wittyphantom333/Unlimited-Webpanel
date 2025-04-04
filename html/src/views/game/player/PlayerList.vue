@@ -136,6 +136,7 @@ export default {
           label: this.$i18n.t('components.playerList.headers.job'),
           field: row => row.job,
           format: val => `${val}`,
+          sortable: true,
         },
         {
           name: 'gang',
@@ -143,6 +144,7 @@ export default {
           label: this.$i18n.t('components.playerList.headers.gang'),
           field: row => row.gang,
           format: val => `${val}`,
+          sortable: true,
         },
         {
           name: 'online',
@@ -150,6 +152,7 @@ export default {
           label: this.$i18n.t('components.playerList.headers.online'),
           field: row => row.online,
           format: val => `${val}`,
+          sortable: true,
         },
       ],
       players: [],

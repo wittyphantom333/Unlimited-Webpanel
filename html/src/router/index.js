@@ -257,6 +257,43 @@ const routes = [
     ],
   },
   {
+    path: '/game/houses',
+    name: 'game-houses-list',
+    component: () => import('@/views/game/houses/HousesList.vue'),
+    meta: {
+      resource: RESOURCE.GAME,
+      action: ACTION.GAME.HOUSES.READ,
+      sortBy: 'citizenid',
+      breadcrumb: [
+        {
+          text: 'houses',
+        },
+      ],
+    },
+    children: [
+      {
+        path: ':housesId',
+        name: 'game-houses-detail',
+        props: true,
+        component: () => import('@/views/game/houses/Houses.vue'),
+        meta: {
+          resource: RESOURCE.GAME,
+          action: ACTION.GAME.HOUSES.READ,
+          breadcrumb: [
+            {
+              text: 'houses',
+              to: { name: 'game-houses-list' },
+            },
+            {
+              text: 'houses',
+              active: true,
+            },
+          ],
+        },
+      },
+    ],
+  },
+  {
     path: '/game/stashes',
     name: 'game-stashes-list',
     component: () => import('@/views/game/stashes/StashesList.vue'),

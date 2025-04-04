@@ -25,7 +25,7 @@ configRouter.post(
       ctx.body = { resCode: true }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -44,7 +44,7 @@ configRouter.post(
       ctx.body = { resCode: true }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }

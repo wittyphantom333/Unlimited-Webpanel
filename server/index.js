@@ -6,6 +6,7 @@ import DatabaseController from './Utils/db.controller'
 import GameController from './Game/GameController'
 import PlayerController from './Game/PlayerController'
 import VehicleController from './Game/VehicleController'
+import HousesController from "./Game/HousesController";
 import { oxmysql as MySQL } from '@overextended/oxmysql'
 
 // load scripts
@@ -42,6 +43,7 @@ export const Database = new DatabaseController()
 export const Game = new GameController()
 export const Players = new PlayerController()
 export const Vehicles = new VehicleController()
+export const Houses = new HousesController()
 
 Database.init().then(async () => {
   // create toke if not mysql store

@@ -26,14 +26,14 @@
     "change": "Change",
     "success": "Success",
     "error": "Error",
-    "saved": "Successfully saved.",
-    "deleted": "Deleted successfully.",
-    "cleared": "Cleared successfully.",
+    "saved": "Successfully Saved.",
+    "deleted": "Deleted Successfully.",
+    "cleared": "Cleared Successfully.",
     "ok": "Ok",
     "cancel": "Cancel",
     "create": "Create",
     "back": "Back",
-    "changePassword": "Change password",
+    "changePassword": "Change Password",
     "kick": "Kick",
     "ban": "Ban",
     "fillUp": "Fill up",
@@ -41,8 +41,8 @@
     "add": "Add",
     "added": "Added",
     "teleport": "Teleport",
-    "teleported": "Teleport successfull.",
-    "cantReach": "Cant reach server.",
+    "teleported": "Teleport Successfull",
+    "cantReach": "Cant Reach Server.",
     "male": "Male",
     "female": "Female",
     "yes": "Yes",
@@ -62,15 +62,17 @@
     "kickHeader": "Kick",
     "kickMsg": "Enter kick reason for <span class='text-primary'>{name}</span>.",
     "kickSuccess": "The player got kicked.",
-    "toggleAll": "Toggle all",
+    "toggleAll": "Toggle All",
     "heal": "Heal",
-    "offline": "Player offline",
+    "offline": "Player Offline",
     "or": "or",
     "timeout": "Request timed out."
   },
   "breadcrumb": {
     "vehicles": "Vehicles",
     "vehicle": "Vehicle",
+    "houses": "Houses",
+    "house": "House",
     "items": "Items",
     "item": "Item",
     "jobs": "Jobs",
@@ -106,7 +108,7 @@
   },
   "navigation": {
     "header": {
-      "gameserver": "Gameserver",
+      "gameserver": "Game Server",
       "development": "Development",
       "management": "Management"
     },
@@ -118,6 +120,7 @@
       "player": "Players",
       "logs": "Logs",
       "vehicle": "Vehicles",
+      "houses": "Houses",
       "items": "Items",
       "jobs": "Jobs",
       "gangs": "Gangs",
@@ -130,7 +133,7 @@
   },
   "components": {
     "general": {
-      "changePasswordHeader": "Change password",
+      "changePasswordHeader": "Change Password",
       "changePasswordMsg": "Please enter your new password.",
       "msg": {
         "error": {
@@ -139,12 +142,12 @@
       }
     },
     "dashboard": {
-      "cpu": "CPU usage",
-      "ram": "Memory usage",
-      "process": "Process usage",
-      "onlinePlayers": "Players online",
-      "gangOnline": "Gang Members online",
-      "jobsDuty": "Players on duty",
+      "cpu": "CPU Usage",
+      "ram": "Memory Usage",
+      "process": "Process Usage",
+      "onlinePlayers": "Players Online",
+      "gangOnline": "Gang Members Online",
+      "jobsDuty": "Players on Duty",
       "headers": {
         "name": "Name",
         "character": "Character",
@@ -169,7 +172,7 @@
       "tokenPlaceHolder": "Insert Setup Token"
     },
     "login": {
-      "subtext": "Welcome to the Unlimted Webpanel. Please log in.",
+      "subtext": "Welcome to the BayCity Admin Panel. Please log in.",
       "msg": {
         "error": {
           "not_supported": "Selected provider seems not to be supported.",
@@ -179,14 +182,14 @@
     },
     "itemList": {
       "subheader": "All items from QBCore/Shared/items.lua. Items registered via QB-Exports/Functions are not displayed.",
-      "noData": "No match",
-      "loadData": "Load data",
+      "noData": "No Match",
+      "loadData": "Load Data",
       "headers": {
         "label": "Label",
         "type": "Type",
         "weight": "Weight",
         "name": "Name",
-        "useable": "Useable",
+        "useable": "Usable",
         "unique": "Unique",
         "shouldClose": "Close"
       },
@@ -201,7 +204,7 @@
       "image": "Icon",
       "weight": "Weight",
       "type": "Type",
-      "useable": "Useable",
+      "useable": "Usable",
       "unique": "Unique",
       "shouldClose": "Close after use",
       "edit": "Edit item",
@@ -215,7 +218,7 @@
       "combinable": {
         "accept": "Combine with",
         "reward": "Result",
-        "text": "Displaytext",
+        "text": "Display text",
         "timeOut": "Time",
         "lib": "Animation Lib",
         "dict": "Animation Dict"
@@ -279,18 +282,22 @@
         "gangs": "Gangs",
         "user": "Users",
         "roles": "Roles",
+        "houses": "Houses",
         "config": "Configuration",
-        "stashes": "Stashes"
+        "stashes": "Stashes",
+        "modify": "Modify"
       },
       "action": {
         "read": "Read",
         "modify": "Modify",
+        "modify2": "Modify 2",
+        "modify3": "Modify 3",
         "delete": "Delete",
         "despawn": "Despawn",
         "repair": "Repair",
         "create": "Create",
-        "player": "Show players",
-        "vehicle": "Show vehicles",
+        "player": "Show Players",
+        "vehicle": "Show Vehicles",
         "kick": "Kick",
         "warn": "Warn",
         "ban": "Ban",
@@ -308,6 +315,11 @@
           "dev": "Dev",
           "web": "Web"
         }
+      },
+      "level": {
+        "level1": "Basic",
+        "level2": "Adv",
+        "level3": "DANGER"
       },
       "msg": {
         "error": {
@@ -498,14 +510,15 @@
         "gang": "Gang",
         "job": "Job",
         "online": "Online",
-        "citizenid": "Citizen-ID",
-        "name": "Accountname"
+        "citizenid": "CitizenId",
+        "name": "Account Name"
       }
     },
     "player": {
       "tabs": {
         "general": "General",
         "vehicles": "Vehicles",
+        "houses": "Houses",
         "logs": "Logs",
         "notes": "Notes"
       },
@@ -538,7 +551,7 @@
       "moneyDisclaimer": "This does not support money of any type as item.",
       "headers": {
         "general": "General",
-        "charinfo": "Characterinfo",
+        "charinfo": "Character Info",
         "meta": "Metadata",
         "money": "Money",
         "gang": "Gang",
@@ -546,24 +559,24 @@
         "actions": "Actions"
       },
       "labels": {
-        "name": "Accountname",
-        "citizenid": "Citizen-ID",
+        "name": "Account Name",
+        "citizenid": "CitizenId",
         "license": "License",
         "position": "Position",
         "firstname": "Firstname",
         "lastname": "Lastname",
         "account": "Account",
-        "cid": "Char-ID",
+        "cid": "Character ID",
         "gender": "Gender",
         "male": "male",
         "female": "female",
         "birthdate": "Birthday",
         "nationality": "Nationality",
         "phone": "Phone",
-        "backstory": "Charstory",
-        "isdead": "Is dead",
+        "backstory": "Backstory",
+        "isdead": "Dead",
         "ishandcuffed": "Cuffed",
-        "walletid": "Wallet-ID",
+        "walletid": "Wallet ID",
         "fingerprint": "Fingerprint",
         "bloodtype": "Bloodtype",
         "thirst": "Thirst",
@@ -611,7 +624,7 @@
           "failedFetchJobs": "Failed to fetch jobs.",
           "deleteError": "Something went wrong.",
           "couldNotFetchScreen": "Error while fetching players current screen.",
-          "invalid_citizenid": "The issued Citizen-ID is not valid.",
+          "invalid_citizenid": "The issued CitizenId is not valid.",
           "not_allowed": "The money type is either not found or no negative value allowed."
         }
       }
@@ -661,7 +674,7 @@
       },
       "labels": {
         "owner": "Owner",
-        "citizenid": "Citizen-ID",
+        "citizenid": "CitizenId",
         "license": "License",
         "depotprice": "Depot Price",
         "balance": "Balance",
@@ -684,7 +697,7 @@
           "not_spawned": "Vehicle is not spawned.",
           "not_found": "Something went wrong. Could not finde vehicle.",
           "missingData": "Missing new owner data.",
-          "invalid_citizenid": "The issued Citizen-ID is not valid.",
+          "invalid_citizenid": "The issued CitizenId is not valid.",
           "sql_error": "Something went wrong while running SQL queries. No changes were made!",
           "allowedCharsNumbers": "You can only use space, numbers and chars on your plate.",
           "plate_exists": "The plate does already exists. Please choose an other one."
@@ -693,6 +706,101 @@
     },
     "vehicleCreate": {
       "new": "Create new vehicle"
+    },
+    "housesList": {
+      "subheader": "Player Houses List",
+      "noData": "No match",
+      "loadData": "Load data",
+      "spawned": "Spawned",
+      "garage": "Garage",
+      "outside": "Outside",
+      "inpound": "Impound",
+      "headers": {
+        "owner": "CitizenId",
+        "type": "Type",
+        "houses": "House Name",
+        "stashLevel": "Stash Level",
+        "stashName": "Stash Name",
+        "doorInside": "House Shell",
+        "houseGarageInside": "Garage Shell",
+        "price": "Price",
+        "mlo": "MLO"
+      },
+      "recordsPerPage": "Records per page",
+      "paginationLabel": "{from}-{to} of {total}",
+      "createHouses": "Create Houses"
+    },
+    "houses": {
+      "property": "Property",
+      "stashInfo": "Info",
+      "logout": "Logout",
+      "wardrobe": "Wardrobe",
+      "changeOwnerHeader": "Select the new owner",
+      "changeOwnerInput": "Insert new owners Citizen-ID",
+      "general": {
+        "true": "True",
+        "false": "False"
+      },
+      "garageTypes": {
+        "highEndAppartment": "highEndAppartment",
+        "midGarage": "midGarage",
+        "importGarage": "importGarage",
+        "lowGarage": "lowGarage",
+        "neonGarage": "neonGarage"
+      },
+      "buttons": {
+        "changeOwner": "Change Owner",
+        "despawnHouses": "Despawn Houses",
+        "repairHouses": "Repair Houses",
+        "deleteHouses": "Delete Houses",
+        "openStash": "Open Stash",
+        "openGlovebox": "Open Glovebox"
+      },
+      "header": {
+        "owner": "House Info",
+        "stashInfo": "Interior Info",
+        "property": "Property Info",
+        "garage": "Garage Info"
+      },
+      "labels": {
+        "owner": "Owner",
+        "citizenid": "CitizenId",
+        "houseName": "House Name",
+        "type": "House Type",
+        "stashName": "Stash Name",
+        "stashLevel": "Stash Level",
+        "stash": "Stash",
+        "keyholders": "Key Holders",
+        "wardrobe": "Wardrobe",
+        "furniture": "Furniture",
+        "logout": "Logout",
+        "extras": "Extras",
+        "doorCoords": "Garage Access",
+        "doorInside": "House Shell",
+        "houseGarageCoords": "Garage Location",
+        "houseGarageInside": "Garage Shell",
+        "houseGarageSpawn": "Spawn Vehicle",
+        "houseGarageStore": "Store Vehicle",
+        "mlo": "MLO",
+        "price": "Price",
+        "maxFurnitureRange": "Max Furniture Range",
+        "apart_id": "ApartmentId",
+        "garden": "Garden",
+        "pool": "Pool",
+        "camerasystem": "Camera System"
+      },
+      "msg": {
+        "error": {
+          "noMatch": "Could not find houses. Maybe it got deleted?",
+          "not_spawned": "Houses is not spawned.",
+          "not_found": "Something went wrong. Could not finde houses.",
+          "missingData": "Missing new owner data.",
+          "invalid_citizenid": "The issued CitizenId is not valid.",
+          "sql_error": "Something went wrong while running SQL queries. No changes were made!",
+          "allowedCharsNumbers": "You can only use space, numbers and chars on your plate.",
+          "plate_exists": "The plate does already exists. Please choose an other one."
+        }
+      }
     },
     "logs": {
       "loadMore": "Scrolling up loads more logs."
@@ -715,10 +823,10 @@
       "buttons": {
         "undo": "Undo",
         "defaults": "Defaults",
-        "fixSupStashItems": "Fix Stash Headers"
+        "fixSupStashItems": "Attempt Fix"
       },
-      "fixSupStashItemsHeader": "Fix Stash Item Header",
-      "fixSupStashItemsSub": "Attempt to fix the headers on the stash tables"
+      "fixSupStashItemsHeader": "Fix Supporter Stash Item Header",
+      "fixSupStashItemsSub": "Attempt to fix the headers on the supporter stash"
     },
     "inventory": {
       "playerInventory": "Player",
@@ -770,7 +878,8 @@
         "model": "Model",
         "hash": "Hash",
         "price": "Price",
-        "category": "Category"
+        "category": "Category",
+        "class": "Class"
       },
       "recordsPerPage": "Records per page",
       "paginationLabel": "{from}-{to} of {total}",
@@ -783,7 +892,7 @@
       "name": "Name",
       "brand": "Brand",
       "category": "Category",
-      "categoryLabel": "Category label",
+      "class": "Class",
       "price": "Price",
       "shop": "Shop",
       "customVariables": "Custom variables",
@@ -855,21 +964,21 @@
     },
     "accountList": {
       "subheader": "Get players by their account.",
-      "noData": "No match",
-      "loadData": "Load data",
+      "noData": "No Match",
+      "loadData": "Load Data",
       "headers": {
         "name": "Name",
         "license": "License",
         "character_count": "Characters",
-        "last_active": "Last online"
+        "last_active": "Last Online"
       },
       "recordsPerPage": "Records per page",
       "paginationLabel": "{from}-{to} of {total}"
     },
     "stashesList": {
       "subheader": "Overview of all configured stashes.",
-      "noData": "No match",
-      "loadData": "Load data",
+      "noData": "No Match",
+      "loadData": "Load Data",
       "headers": {
         "type": "Type",
         "identifier": "Identifier",

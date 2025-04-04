@@ -47,7 +47,7 @@ userRouter.get(
       ctx.body = { user: user, roles: rolesList }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -76,7 +76,7 @@ userRouter.patch(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -106,7 +106,7 @@ userRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -130,7 +130,7 @@ userRouter.delete(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -171,7 +171,7 @@ userRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -196,7 +196,7 @@ userRouter.patch(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }

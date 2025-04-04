@@ -153,6 +153,7 @@ export default {
           label: this.$i18n.t('components.vehicleList.headers.vehicle'),
           field: row => row.vehicle,
           format: val => `${val}`,
+          sortable: true,
         },
         {
           name: 'garage',
@@ -168,6 +169,7 @@ export default {
           label: this.$i18n.t('components.vehicleList.headers.spawned'),
           field: row => row.spawned,
           format: val => `${val}`,
+          sortable: true,
         },
         {
           name: 'state',
@@ -175,6 +177,7 @@ export default {
           label: this.$i18n.t('components.vehicleList.headers.state'),
           field: row => row.state,
           format: val => `${val}`,
+          sortable: true,
         },
         {
           name: 'engine',

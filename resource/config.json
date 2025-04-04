@@ -1,5 +1,7 @@
 {
   "port": "3000",
+  "unlApplicationName": "BayCity Roleplay",
+  "unlHostName": "admin.baycity-roleplay.com",
   "unlDisableServe": "false",
   "unlMySQLSessions": "false",
 
@@ -50,7 +52,12 @@
   "additionalMoneyTypes": {},
 
   "usedInventory": "qb-inventory",
+  "inventoryImageFolder": "/html/images",
+  "inventoryForImage": "qb-inventory",
   "maxPlayerSlots": "41",
+
+  "housingTable": "jpr_housingsystem_houses",
+  "housingTableProperties": "jpr_housingsystem_houses_realestate",
 
   "disableWeaponLogs": "false",
   "excludeWeaponLogsFromDiscord": "false",

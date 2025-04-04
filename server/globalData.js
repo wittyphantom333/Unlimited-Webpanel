@@ -29,10 +29,14 @@ const unlQBObject = GetConvar('unlQBObject', config.QBObject).trim()
 const unlQBShared = GetConvar('unlQBShared', config.QBShared).trim()
 
 const inventory = GetConvar('unlUsedInventory', config.usedInventory).trim()
+const inventoryForImage = GetConvar('inventoryForImage', config.inventoryForImage).trim()
+const housingTable = GetConvar('housingTable', config.housingTable).trim()
+const housingTableProperties = GetConvar('housingTableProperties', config.housingTableProperties).trim()
+const inventoryImageFolder = GetConvar('unlInventoryImageFolder', config.inventoryImageFolder).trim()
 const maxPlayerSlots = parseInt(
   GetConvar('unlMaxPlayerSlots', config.maxPlayerSlots).trim()
 )
-const inventoryImagePath = `${GetResourcePath(inventory)}/html/images`
+const inventoryImagePath = `${GetResourcePath(inventoryForImage)}${inventoryImageFolder}`
 
 const unlDiscordHook = getConvarString('unlDiscordHook')
 const unlGameDiscordHook = getConvarString('unlGameDiscordHook')
@@ -128,6 +132,8 @@ export const unlEnv = Object.freeze({
   unlWebVersion,
   inventoryImagePath,
   inventory,
+  housingTable,
+  housingTableProperties,
   maxPlayerSlots,
   configPath,
   loggerPaths,

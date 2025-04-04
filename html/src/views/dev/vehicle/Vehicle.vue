@@ -56,12 +56,12 @@
                 :label="$t(`components.devVehicle.category`)"
               />
               <q-input
-                label-color="primary"
-                :input-style="{ color: 'var(--q-main)' }"
-                filled
-                class="q-mt-md"
-                v-model="vehicle.categoryLabel"
-                :label="$t(`components.devVehicle.categoryLabel`)"
+                  label-color="primary"
+                  :input-style="{ color: 'var(--q-main)' }"
+                  filled
+                  class="q-mt-md"
+                  v-model="vehicle.class"
+                  :label="$t(`components.devVehicle.class`)"
               />
               <q-input
                 label-color="primary"
@@ -241,7 +241,7 @@ export default {
         'model',
         'price',
         'category',
-        'categorylabel',
+        'class',
         'hash',
         'shop',
       ],

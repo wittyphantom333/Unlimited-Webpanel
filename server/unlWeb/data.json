@@ -1,0 +1,731 @@
+{
+  "lang": "en",
+  "user": [
+    {
+      "name": "witt",
+      "password": "vberAOSPUBvz7AXoKjZg9RDB8ztDb2EoJ0QUq2AGa7Y=",
+      "isMaster": true,
+      "roleId": null,
+      "fxname": "PushingStart"
+    },
+    {
+      "name": "ntk",
+      "password": "o2tIshtPvmvfylTHo5wJwJNX2zLVgg0Ll8qPcy7tc2E=",
+      "isMaster": false,
+      "roleId": "Mod",
+      "fxname": ""
+    },
+    {
+      "name": "fullsendgaming",
+      "password": "k268Gl0wM1fGvVgAMyuwshx3J1EIlZQiggazljZaHV4=",
+      "isMaster": false,
+      "roleId": "dev",
+      "fxname": ""
+    }
+  ],
+  "roles": [
+    {
+      "name": "Mod",
+      "desc": "",
+      "permissions": [
+        {
+          "subject": "game",
+          "action": "waypoint:read"
+        },
+        {
+          "subject": "game",
+          "action": "account:read"
+        },
+        {
+          "subject": "game",
+          "action": "player:read"
+        },
+        {
+          "subject": "game",
+          "action": "player:modify"
+        },
+        {
+          "subject": "game",
+          "action": "player:license"
+        },
+        {
+          "subject": "game",
+          "action": "player:job"
+        },
+        {
+          "subject": "game",
+          "action": "player:gang"
+        },
+        {
+          "subject": "game",
+          "action": "player:money"
+        },
+        {
+          "subject": "game",
+          "action": "player:meta"
+        },
+        {
+          "subject": "game",
+          "action": "player:position"
+        },
+        {
+          "subject": "game",
+          "action": "player:inventory"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:read"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:modify"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:despawn"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:repair"
+        },
+        {
+          "subject": "game",
+          "action": "stashes:read"
+        },
+        {
+          "subject": "game",
+          "action": "stashes:modify"
+        },
+        {
+          "subject": "game",
+          "action": "logs:read"
+        },
+        {
+          "subject": "game",
+          "action": "logs:game"
+        },
+        {
+          "subject": "game",
+          "action": "logs:player"
+        },
+        {
+          "subject": "game",
+          "action": "logs:dev"
+        },
+        {
+          "subject": "game",
+          "action": "logs:web"
+        },
+        {
+          "subject": "dev",
+          "action": "item:read"
+        },
+        {
+          "subject": "dev",
+          "action": "item:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "item:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "item:create"
+        },
+        {
+          "subject": "dev",
+          "action": "job:read"
+        },
+        {
+          "subject": "dev",
+          "action": "job:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "job:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "job:create"
+        },
+        {
+          "subject": "dev",
+          "action": "gang:read"
+        },
+        {
+          "subject": "dev",
+          "action": "gang:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "gang:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "gang:create"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:read"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:create"
+        },
+        {
+          "subject": "web",
+          "action": "config:read"
+        },
+        {
+          "subject": "web",
+          "action": "config:modify"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "name": "God",
+      "desc": "",
+      "permissions": [
+        {
+          "subject": "game",
+          "action": "livemap:read"
+        },
+        {
+          "subject": "game",
+          "action": "livemap:player"
+        },
+        {
+          "subject": "game",
+          "action": "livemap:vehicle"
+        },
+        {
+          "subject": "game",
+          "action": "waypoint:read"
+        },
+        {
+          "subject": "game",
+          "action": "waypoint:modify"
+        },
+        {
+          "subject": "game",
+          "action": "waypoint:delete"
+        },
+        {
+          "subject": "game",
+          "action": "waypoint:create"
+        },
+        {
+          "subject": "game",
+          "action": "account:read"
+        },
+        {
+          "subject": "game",
+          "action": "player:read"
+        },
+        {
+          "subject": "game",
+          "action": "player:modify"
+        },
+        {
+          "subject": "game",
+          "action": "player:delete"
+        },
+        {
+          "subject": "game",
+          "action": "player:license"
+        },
+        {
+          "subject": "game",
+          "action": "player:job"
+        },
+        {
+          "subject": "game",
+          "action": "player:gang"
+        },
+        {
+          "subject": "game",
+          "action": "player:kick"
+        },
+        {
+          "subject": "game",
+          "action": "player:warn"
+        },
+        {
+          "subject": "game",
+          "action": "player:ban"
+        },
+        {
+          "subject": "game",
+          "action": "player:money"
+        },
+        {
+          "subject": "game",
+          "action": "player:meta"
+        },
+        {
+          "subject": "game",
+          "action": "player:position"
+        },
+        {
+          "subject": "game",
+          "action": "player:inventory"
+        },
+        {
+          "subject": "game",
+          "action": "player:screen"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:read"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:modify"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:delete"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:create"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:despawn"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:repair"
+        },
+        {
+          "subject": "game",
+          "action": "stashes:read"
+        },
+        {
+          "subject": "game",
+          "action": "stashes:modify"
+        },
+        {
+          "subject": "game",
+          "action": "stashes:delete"
+        },
+        {
+          "subject": "game",
+          "action": "logs:read"
+        },
+        {
+          "subject": "game",
+          "action": "logs:game"
+        },
+        {
+          "subject": "game",
+          "action": "logs:player"
+        },
+        {
+          "subject": "game",
+          "action": "logs:dev"
+        },
+        {
+          "subject": "game",
+          "action": "logs:web"
+        },
+        {
+          "subject": "dev",
+          "action": "item:read"
+        },
+        {
+          "subject": "dev",
+          "action": "item:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "item:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "item:create"
+        },
+        {
+          "subject": "dev",
+          "action": "job:read"
+        },
+        {
+          "subject": "dev",
+          "action": "job:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "job:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "job:create"
+        },
+        {
+          "subject": "dev",
+          "action": "gang:read"
+        },
+        {
+          "subject": "dev",
+          "action": "gang:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "gang:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "gang:create"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:read"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:create"
+        },
+        {
+          "subject": "web",
+          "action": "user:read"
+        },
+        {
+          "subject": "web",
+          "action": "user:modify"
+        },
+        {
+          "subject": "web",
+          "action": "user:delete"
+        },
+        {
+          "subject": "web",
+          "action": "user:create"
+        },
+        {
+          "subject": "web",
+          "action": "role:read"
+        },
+        {
+          "subject": "web",
+          "action": "role:modify"
+        },
+        {
+          "subject": "web",
+          "action": "role:delete"
+        },
+        {
+          "subject": "web",
+          "action": "role:create"
+        },
+        {
+          "subject": "web",
+          "action": "config:read"
+        },
+        {
+          "subject": "web",
+          "action": "config:modify"
+        }
+      ],
+      "color": "yellow"
+    },
+    {
+      "name": "dev",
+      "desc": "Dev",
+      "permissions": [
+        {
+          "subject": "game",
+          "action": "livemap:read"
+        },
+        {
+          "subject": "game",
+          "action": "livemap:player"
+        },
+        {
+          "subject": "game",
+          "action": "livemap:vehicle"
+        },
+        {
+          "subject": "game",
+          "action": "waypoint:read"
+        },
+        {
+          "subject": "game",
+          "action": "waypoint:modify"
+        },
+        {
+          "subject": "game",
+          "action": "waypoint:delete"
+        },
+        {
+          "subject": "game",
+          "action": "waypoint:create"
+        },
+        {
+          "subject": "game",
+          "action": "account:read"
+        },
+        {
+          "subject": "game",
+          "action": "player:read"
+        },
+        {
+          "subject": "game",
+          "action": "player:modify"
+        },
+        {
+          "subject": "game",
+          "action": "player:delete"
+        },
+        {
+          "subject": "game",
+          "action": "player:license"
+        },
+        {
+          "subject": "game",
+          "action": "player:job"
+        },
+        {
+          "subject": "game",
+          "action": "player:gang"
+        },
+        {
+          "subject": "game",
+          "action": "player:money"
+        },
+        {
+          "subject": "game",
+          "action": "player:meta"
+        },
+        {
+          "subject": "game",
+          "action": "player:position"
+        },
+        {
+          "subject": "game",
+          "action": "player:inventory"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:read"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:modify"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:create"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:despawn"
+        },
+        {
+          "subject": "game",
+          "action": "vehicle:repair"
+        },
+        {
+          "subject": "game",
+          "action": "stashes:read"
+        },
+        {
+          "subject": "game",
+          "action": "stashes:modify"
+        },
+        {
+          "subject": "game",
+          "action": "logs:read"
+        },
+        {
+          "subject": "game",
+          "action": "logs:game"
+        },
+        {
+          "subject": "game",
+          "action": "logs:player"
+        },
+        {
+          "subject": "game",
+          "action": "logs:dev"
+        },
+        {
+          "subject": "game",
+          "action": "logs:web"
+        },
+        {
+          "subject": "dev",
+          "action": "item:read"
+        },
+        {
+          "subject": "dev",
+          "action": "item:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "item:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "item:create"
+        },
+        {
+          "subject": "dev",
+          "action": "job:read"
+        },
+        {
+          "subject": "dev",
+          "action": "job:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "job:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "job:create"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:read"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:modify"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:delete"
+        },
+        {
+          "subject": "dev",
+          "action": "vehicle:create"
+        }
+      ],
+      "color": "light-blue"
+    }
+  ],
+  "waypoints": [],
+  "tokenSecret": "3KiFAkwHPQfNVkTyeRmh",
+  "supporterStash": [
+    {
+      "name": "silveringot",
+      "amount": 1,
+      "info": {},
+      "label": "Silver Ingot",
+      "description": "",
+      "weight": 1000,
+      "type": "item",
+      "unique": false,
+      "useable": false,
+      "image": "silveringot.png",
+      "shouldClose": false,
+      "slot": 1
+    },
+    {
+      "name": "radio",
+      "amount": 1,
+      "info": [],
+      "label": "Radio",
+      "description": "You can communicate with this through a signal",
+      "weight": 2000,
+      "type": "item",
+      "unique": true,
+      "useable": true,
+      "image": "radio.png",
+      "shouldClose": true,
+      "slot": 2
+    },
+    {
+      "name": "radio",
+      "amount": 1,
+      "info": [],
+      "label": "Radio",
+      "description": "You can communicate with this through a signal",
+      "weight": 2000,
+      "type": "item",
+      "unique": true,
+      "useable": true,
+      "image": "radio.png",
+      "shouldClose": true,
+      "slot": 3
+    },
+    {
+      "name": "radio",
+      "amount": 1,
+      "info": [],
+      "label": "Radio",
+      "description": "You can communicate with this through a signal",
+      "weight": 2000,
+      "type": "item",
+      "unique": true,
+      "useable": true,
+      "image": "radio.png",
+      "shouldClose": true,
+      "slot": 6
+    },
+    {
+      "name": "radio",
+      "amount": 1,
+      "info": [],
+      "label": "Radio",
+      "description": "You can communicate with this through a signal",
+      "weight": 2000,
+      "type": "item",
+      "unique": true,
+      "useable": true,
+      "image": "radio.png",
+      "shouldClose": true,
+      "slot": 7
+    }
+  ],
+  "colors": {
+    "primary": {
+      "value": "#7367f0"
+    },
+    "secondary": {
+      "value": "#283046"
+    },
+    "main": {
+      "value": "#ffffff"
+    },
+    "sub": {
+      "value": "#9e9e9e"
+    },
+    "accent": {
+      "value": "#03DAC6"
+    },
+    "dark": {
+      "value": "#161d31"
+    },
+    "positive": {
+      "value": "#4CAF50"
+    },
+    "negative": {
+      "value": "#B00020"
+    },
+    "info": {
+      "value": "#2196F3"
+    },
+    "warning": {
+      "value": "#FB8C00"
+    }
+  }
+}

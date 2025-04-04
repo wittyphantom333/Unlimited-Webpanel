@@ -7,6 +7,7 @@ import * as RoleService from '../../web/role/role.service'
 import { webLogger } from '../../../Logging/Modules/WebLogger'
 import { Database } from '../../../index'
 import CitizenFXProvider from '../../../Provider/citizenfx.provider'
+import {UnlLogger} from "../../../Logging/UnlLogger";
 
 export const authRouter = new router({ prefix: '/auth' })
 

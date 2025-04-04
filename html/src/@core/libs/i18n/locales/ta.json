@@ -780,7 +780,7 @@
       "name": "Name",
       "brand": "Brand",
       "category": "Category",
-      "categoryLabel": "Category label",
+      "class": "Class",
       "price": "Price",
       "shop": "Shop",
       "customVariables": "விருப்ப மாறிகள்",

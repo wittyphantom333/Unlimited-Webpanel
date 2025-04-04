@@ -119,8 +119,8 @@ export default {
       ],
       accounts: [],
       pagination: {
-        sortBy: 'name',
-        descending: false,
+        sortBy: 'last_active',
+        descending: true,
         page: 1,
         rowsPerPage: 25,
         rowsNumber: 25,

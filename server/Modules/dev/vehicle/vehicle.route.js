@@ -42,7 +42,7 @@ devVehicleRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -72,7 +72,7 @@ devVehicleRouter.patch(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -101,7 +101,7 @@ devVehicleRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -130,7 +130,7 @@ devVehicleRouter.delete(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }

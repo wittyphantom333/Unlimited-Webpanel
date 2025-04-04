@@ -114,7 +114,6 @@
               color="primary"
               @click="tryFixItems"
               :label="$t('components.configuration.buttons.fixSupStashItems')"
-              class="q-ml-md"
             />
           </q-card-section>
         </div>

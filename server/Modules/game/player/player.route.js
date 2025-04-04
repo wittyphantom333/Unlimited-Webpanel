@@ -26,6 +26,8 @@ import { banFile } from '../../../Logging/Modules/BanFile'
 import { getPlayerBans } from '../../../Logging/LogReader'
 import playerInventoryRouter from './inventory/inventory.route'
 import { getPlayerDatabaseVehicleCount } from '../vehicle/vehicle.service'
+import { getPlayerDatabaseHousesCount} from "../houses/houses.service";
+import {getPlayerHouses} from "../houses/houses.controller";
 
 export const playerRouter = new router({ prefix: '/players' })
 
@@ -60,7 +62,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -80,7 +82,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -123,7 +125,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -143,7 +145,7 @@ playerRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -187,7 +189,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -207,7 +209,7 @@ playerRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -251,7 +253,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -307,7 +309,7 @@ playerRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -335,7 +337,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -395,7 +397,7 @@ playerRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -416,7 +418,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -451,11 +453,67 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
   }
+)
+
+playerRouter.post(
+    '/:citizenid/houses-count',
+    checkPermission(ACTION.GAME.PLAYER.READ, RESOURCE.GAME),
+    async ctx => {
+      try {
+        const citizenid = ctx.params.citizenid
+        const { filter } = ctx.request.body
+        const data = await getPlayerDatabaseHousesCount(citizenid, filter)
+
+        ctx.body = {
+          count: data[0].count,
+        }
+        ctx.status = 200
+      } catch (e) {
+        UnlLogger.error(e)
+        ctx.body = e.message
+        ctx.status = 500
+      }
+    }
+)
+
+playerRouter.post(
+    '/:citizenid/houses',
+    checkPermission(ACTION.GAME.PLAYER.READ, RESOURCE.GAME),
+    async ctx => {
+      webLogger.info(
+          `${ctx.session.auth.user.name} requested player houses for citizenid ${ctx.params.citizenid}.`
+      )
+      try {
+        const citizenid = ctx.params.citizenid
+        const { startRow, count, filter, sortBy, descending } = ctx.request.body
+        const houses = await getPlayerHouses(
+            startRow,
+            count,
+            filter,
+            sortBy,
+            descending,
+            citizenid
+        )
+
+        playerLogger.info(
+            `[${ctx.params.citizenid}] ${ctx.session.auth.user.name} requested player houses.`
+        )
+
+        ctx.body = {
+          houses: houses,
+        }
+        ctx.status = 200
+      } catch (e) {
+        UnlLogger.error(e)
+        ctx.body = e.message
+        ctx.status = 500
+      }
+    }
 )
 
 playerRouter.post(
@@ -503,7 +561,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -616,7 +674,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -661,7 +719,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -701,7 +759,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -745,7 +803,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -784,7 +842,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -823,7 +881,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -860,7 +918,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -941,7 +999,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -978,7 +1036,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -1014,7 +1072,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -1062,7 +1120,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -1113,7 +1171,7 @@ playerRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }

@@ -57,6 +57,12 @@ const ACTION = {
       DESPAWN: 'vehicle:despawn',
       REPAIR: 'vehicle:repair',
     },
+    HOUSES: {
+      READ: 'houses:read',
+      MODIFY: 'houses:modify',
+      CREATE: 'houses:create',
+      DELETE: 'houses:delete',
+    },
     LOGS: {
       READ: 'logs:read',
       GAME: 'logs:game',

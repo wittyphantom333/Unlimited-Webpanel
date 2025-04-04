@@ -51,7 +51,7 @@ itemRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -78,7 +78,7 @@ itemRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -97,7 +97,7 @@ itemRouter.get('/item-list', async ctx => {
     }
     ctx.status = 200
   } catch (e) {
-    UnlLogger.error(e.message)
+    UnlLogger.error(e)
     ctx.body = e.message
     ctx.status = 500
   }
@@ -128,7 +128,7 @@ itemRouter.get(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -158,7 +158,7 @@ itemRouter.patch(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -187,7 +187,7 @@ itemRouter.post(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -218,7 +218,7 @@ itemRouter.delete(
       }
       ctx.status = 200
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }
@@ -255,7 +255,7 @@ itemRouter.post(
         images: images,
       }
     } catch (e) {
-      UnlLogger.error(e.message)
+      UnlLogger.error(e)
       ctx.body = e.message
       ctx.status = 500
     }

@@ -54,6 +54,13 @@ export default [
     action: ACTION.GAME.VEHICLE.READ,
   },
   {
+    title: 'houses',
+    icon: 'house',
+    route: 'game-houses-list',
+    resource: RESOURCE.GAME,
+    action: ACTION.GAME.HOUSES.READ,
+  },
+  {
     title: 'stashes',
     icon: 'fas fa-box-open',
     route: 'game-stashes-list',

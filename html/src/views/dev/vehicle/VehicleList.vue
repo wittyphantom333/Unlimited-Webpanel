@@ -77,6 +77,9 @@
                 <q-td key="category" :props="props">
                   {{ props.row.category }}
                 </q-td>
+                <q-td key="class" :props="props">
+                  {{ props.row.class }}
+                </q-td>
               </q-tr>
             </template>
           </q-table>
@@ -146,6 +149,14 @@ export default {
           align: 'left',
           label: this.$i18n.t('components.devVehicleList.headers.category'),
           field: row => row.category,
+          format: val => `${val}`,
+          sortable: true,
+        },
+        {
+          name: 'class',
+          align: 'left',
+          label: this.$i18n.t('components.devVehicleList.headers.class'),
+          field: row => row.class,
           format: val => `${val}`,
           sortable: true,
         },

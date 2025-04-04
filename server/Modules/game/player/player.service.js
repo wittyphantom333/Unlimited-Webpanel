@@ -43,13 +43,13 @@ export const getPartialDatabasePlayers = async (
 
 export const getPlayerInventoryFromDB = async citizenid => {
   return await MySQL.single(
-    'SELECT inventory FROM players WHERE citizenid = ? LIMIT 1',
+    'SELECT inventory FROM codem_new_inventory WHERE identifier = ? LIMIT 1',
     [citizenid]
   )
 }
 
 export const savePlayerInventoryToDB = async (citizenid, items) => {
-  await MySQL.update('UPDATE players SET inventory = ? WHERE citizenid = ?', [
+  await MySQL.update('UPDATE codem_new_inventory SET inventory = ? WHERE identifier = ?', [
     items,
     citizenid,
   ])

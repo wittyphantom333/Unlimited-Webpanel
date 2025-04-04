@@ -210,6 +210,22 @@
             />
 
             <div class="text-subtitle2">
+              {{ $t('components.role.section.houses') }}
+            </div>
+            <q-checkbox
+                v-model="permissions['game.houses.read'].active"
+                :label="$t('components.role.action.read')"
+            />
+            <q-checkbox
+                v-model="permissions['game.houses.modify'].active"
+                :label="$t('components.role.action.modify')"
+            />
+            <q-checkbox
+                v-model="permissions['game.houses.delete'].active"
+                :label="$t('components.role.action.delete')"
+            />
+
+            <div class="text-subtitle2">
               {{ $t('components.role.section.stashes') }}
             </div>
             <q-checkbox
@@ -606,6 +622,21 @@ export default {
         'game.vehicle.repair': {
           active: false,
           action: ACTION.GAME.VEHICLE.REPAIR,
+          subject: RESOURCE.GAME,
+        },
+        'game.houses.read': {
+          active: false,
+          action: ACTION.GAME.HOUSES.READ,
+          subject: RESOURCE.GAME,
+        },
+        'game.houses.modify': {
+          active: false,
+          action: ACTION.GAME.HOUSES.MODIFY,
+          subject: RESOURCE.GAME,
+        },
+        'game.houses.delete': {
+          active: false,
+          action: ACTION.GAME.HOUSES.DELETE,
           subject: RESOURCE.GAME,
         },
         'game.stashes.read': {

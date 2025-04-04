@@ -5,10 +5,13 @@ import request from 'superagent'
 import { hostname } from 'node:os'
 import { Database } from '../index'
 import jwt from 'jsonwebtoken'
+import { getConfig } from '../Utils/config.load'
 
 const genCallbackURL = (ctx, provider) => {
-  return ctx.protocol + '://' + ctx.get('host') + `/auth/${provider}/callback`
+  return GetConvar('unlServerNameURL', config.unlServerNameURL).trim() + `/auth/${provider}/callback`
 }
+
+const config = getConfig()
 
 export default class CitizenFXProvider {
   constructor() {
@@ -31,7 +34,7 @@ export default class CitizenFXProvider {
   async getAuthURL(ctx, stateKern) {
     try {
       const url = new URL('https://forum.cfx.re/user-api-key/new')
-      url.searchParams.append('application_name', 'Unlimited')
+      url.searchParams.append('application_name', GetConvar('unlServerName', config.unlServerName).trim())
       url.searchParams.append('client_id', hostname())
       url.searchParams.append('scopes', 'session_info')
       url.searchParams.append('public_key', this.publicKey)
@@ -51,6 +54,7 @@ export default class CitizenFXProvider {
   async processCallback(ctx) {
     try {
       const token = ctx.query.payload
+
       if (!token) {
         return { resCode: false, resMsg: 'no_token' }
       }
@@ -62,6 +66,7 @@ export default class CitizenFXProvider {
         },
         Buffer.from(token, 'base64')
       )
+
       const json = JSON.parse(decreptedKey.toString('ascii'))
 
       return { resCode: true, resMsg: { accessToken: json.key } }

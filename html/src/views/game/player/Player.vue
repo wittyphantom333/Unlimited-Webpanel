@@ -65,6 +65,7 @@
 import PlayerGeneral from '@/views/game/player/PlayerGeneral'
 import PlayerLogs from '@/views/game/player/PlayerLogs'
 import PlayerVehicles from '@/views/game/player/PlayerVehicles'
+import PlayerHouses from '@/views/game/player/PlayerHouses'
 import PlayerNotes from '@/views/game/player/PlayerNotes'
 
 export default {
@@ -72,6 +73,7 @@ export default {
   components: {
     PlayerGeneral,
     PlayerVehicles,
+    PlayerHouses,
     PlayerLogs,
     PlayerNotes,
   },
@@ -91,6 +93,12 @@ export default {
           icon: 'directions_car',
           label: this.$i18n.t('components.player.tabs.vehicles'),
           component: 'player-vehicles',
+        },
+        {
+          name: 'houses',
+          icon: 'house',
+          label: this.$i18n.t('components.player.tabs.houses'),
+          component: 'player-houses',
         },
         {
           name: 'logs',

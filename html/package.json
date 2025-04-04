@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
+    "lint": "eslint --ext .js,.vue --fix src"
   },
   "dependencies": {
     "@casl/ability": "^6.5.0",
@@ -28,9 +28,10 @@
     "vue3-apexcharts": "^1.4.1"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.7",
     "@quasar/vite-plugin": "^1.4.1",
     "@vue-leaflet/vue-leaflet": "^0.6.1",
-    "eslint": "^8.44.0",
+    "eslint": "^9.23.0",
     "eslint-plugin-vue": "^9.15.1",
     "sass": "^1.63.6",
     "vite": "^4.4.0"

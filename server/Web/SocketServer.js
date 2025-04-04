@@ -1,5 +1,5 @@
 import osu from 'node-os-utils'
-import { Game, Players, Vehicles } from '../index'
+import { Game, Players, Vehicles, Houses } from '../index'
 import { unlEnv } from '../globalData'
 import { UnlLogger } from '../Logging/UnlLogger'
 import { getOnlineStats } from '../Game/Basics'
